@@ -1,0 +1,15 @@
+<div [className]="'flex flex-col items-center justify-center min-h-screen bg-gray-100'">
+    <div [className]="'w-full max-w-md bg-white rounded-lg shadow-md p-6'">
+      <h2 [className]="'text-2xl font-bold text-center mb-6'">Admin View</h2>
+      @if (message) {
+        <div [className]="'mb-4 text-center text-gray-700'">
+          {{ message }}
+        </div>
+      }
+      <button
+        [className]="'bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'"
+        (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </div>
